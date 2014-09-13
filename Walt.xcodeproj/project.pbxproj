@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF62C45219C5110A00C65EEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C45119C5110A00C65EEA /* Foundation.framework */; };
+		EF62C45419C5110A00C65EEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C45319C5110A00C65EEA /* CoreGraphics.framework */; };
+		EF62C45619C5110A00C65EEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C45519C5110A00C65EEA /* UIKit.framework */; };
+		EF62C45C19C5110A00C65EEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF62C45A19C5110A00C65EEA /* InfoPlist.strings */; };
+		EF62C45E19C5110A00C65EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62C45D19C5110A00C65EEA /* main.m */; };
+		EF62C46219C5110A00C65EEA /* WaltAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62C46119C5110A00C65EEA /* WaltAppDelegate.m */; };
+		EF62C46519C5110A00C65EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF62C46319C5110A00C65EEA /* Main.storyboard */; };
+		EF62C46819C5110A00C65EEA /* WaltMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62C46719C5110A00C65EEA /* WaltMasterViewController.m */; };
+		EF62C46B19C5110A00C65EEA /* WaltDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62C46A19C5110A00C65EEA /* WaltDetailViewController.m */; };
+		EF62C46D19C5110A00C65EEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF62C46C19C5110A00C65EEA /* Images.xcassets */; };
+		EF62C47419C5110A00C65EEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C47319C5110A00C65EEA /* XCTest.framework */; };
+		EF62C47519C5110A00C65EEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C45119C5110A00C65EEA /* Foundation.framework */; };
+		EF62C47619C5110A00C65EEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF62C45519C5110A00C65EEA /* UIKit.framework */; };
+		EF62C47E19C5110A00C65EEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF62C47C19C5110A00C65EEA /* InfoPlist.strings */; };
+		EF62C48019C5110A00C65EEA /* WaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62C47F19C5110A00C65EEA /* WaltTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF62C47719C5110A00C65EEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF62C44619C5110A00C65EEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF62C44D19C5110A00C65EEA;
+			remoteInfo = Walt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF62C44E19C5110A00C65EEA /* Walt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62C45119C5110A00C65EEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF62C45319C5110A00C65EEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF62C45519C5110A00C65EEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF62C45919C5110A00C65EEA /* Walt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Walt-Info.plist"; sourceTree = "<group>"; };
+		EF62C45B19C5110A00C65EEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF62C45D19C5110A00C65EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF62C45F19C5110A00C65EEA /* Walt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Walt-Prefix.pch"; sourceTree = "<group>"; };
+		EF62C46019C5110A00C65EEA /* WaltAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaltAppDelegate.h; sourceTree = "<group>"; };
+		EF62C46119C5110A00C65EEA /* WaltAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaltAppDelegate.m; sourceTree = "<group>"; };
+		EF62C46419C5110A00C65EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF62C46619C5110A00C65EEA /* WaltMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaltMasterViewController.h; sourceTree = "<group>"; };
+		EF62C46719C5110A00C65EEA /* WaltMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaltMasterViewController.m; sourceTree = "<group>"; };
+		EF62C46919C5110A00C65EEA /* WaltDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaltDetailViewController.h; sourceTree = "<group>"; };
+		EF62C46A19C5110A00C65EEA /* WaltDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaltDetailViewController.m; sourceTree = "<group>"; };
+		EF62C46C19C5110A00C65EEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF62C47219C5110A00C65EEA /* WaltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62C47319C5110A00C65EEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF62C47B19C5110A00C65EEA /* WaltTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaltTests-Info.plist"; sourceTree = "<group>"; };
+		EF62C47D19C5110A00C65EEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF62C47F19C5110A00C65EEA /* WaltTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaltTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF62C44B19C5110A00C65EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C45419C5110A00C65EEA /* CoreGraphics.framework in Frameworks */,
+				EF62C45619C5110A00C65EEA /* UIKit.framework in Frameworks */,
+				EF62C45219C5110A00C65EEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62C46F19C5110A00C65EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C47419C5110A00C65EEA /* XCTest.framework in Frameworks */,
+				EF62C47619C5110A00C65EEA /* UIKit.framework in Frameworks */,
+				EF62C47519C5110A00C65EEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF62C44519C5110A00C65EEA = {
+			isa = PBXGroup;
+			children = (
+				EF62C45719C5110A00C65EEA /* Walt */,
+				EF62C47919C5110A00C65EEA /* WaltTests */,
+				EF62C45019C5110A00C65EEA /* Frameworks */,
+				EF62C44F19C5110A00C65EEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF62C44F19C5110A00C65EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C44E19C5110A00C65EEA /* Walt.app */,
+				EF62C47219C5110A00C65EEA /* WaltTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF62C45019C5110A00C65EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C45119C5110A00C65EEA /* Foundation.framework */,
+				EF62C45319C5110A00C65EEA /* CoreGraphics.framework */,
+				EF62C45519C5110A00C65EEA /* UIKit.framework */,
+				EF62C47319C5110A00C65EEA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF62C45719C5110A00C65EEA /* Walt */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C46019C5110A00C65EEA /* WaltAppDelegate.h */,
+				EF62C46119C5110A00C65EEA /* WaltAppDelegate.m */,
+				EF62C46319C5110A00C65EEA /* Main.storyboard */,
+				EF62C46619C5110A00C65EEA /* WaltMasterViewController.h */,
+				EF62C46719C5110A00C65EEA /* WaltMasterViewController.m */,
+				EF62C46919C5110A00C65EEA /* WaltDetailViewController.h */,
+				EF62C46A19C5110A00C65EEA /* WaltDetailViewController.m */,
+				EF62C46C19C5110A00C65EEA /* Images.xcassets */,
+				EF62C45819C5110A00C65EEA /* Supporting Files */,
+			);
+			path = Walt;
+			sourceTree = "<group>";
+		};
+		EF62C45819C5110A00C65EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C45919C5110A00C65EEA /* Walt-Info.plist */,
+				EF62C45A19C5110A00C65EEA /* InfoPlist.strings */,
+				EF62C45D19C5110A00C65EEA /* main.m */,
+				EF62C45F19C5110A00C65EEA /* Walt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF62C47919C5110A00C65EEA /* WaltTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C47F19C5110A00C65EEA /* WaltTests.m */,
+				EF62C47A19C5110A00C65EEA /* Supporting Files */,
+			);
+			path = WaltTests;
+			sourceTree = "<group>";
+		};
+		EF62C47A19C5110A00C65EEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF62C47B19C5110A00C65EEA /* WaltTests-Info.plist */,
+				EF62C47C19C5110A00C65EEA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF62C44D19C5110A00C65EEA /* Walt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF62C48319C5110A00C65EEA /* Build configuration list for PBXNativeTarget "Walt" */;
+			buildPhases = (
+				EF62C44A19C5110A00C65EEA /* Sources */,
+				EF62C44B19C5110A00C65EEA /* Frameworks */,
+				EF62C44C19C5110A00C65EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walt;
+			productName = Walt;
+			productReference = EF62C44E19C5110A00C65EEA /* Walt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF62C47119C5110A00C65EEA /* WaltTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF62C48619C5110A00C65EEA /* Build configuration list for PBXNativeTarget "WaltTests" */;
+			buildPhases = (
+				EF62C46E19C5110A00C65EEA /* Sources */,
+				EF62C46F19C5110A00C65EEA /* Frameworks */,
+				EF62C47019C5110A00C65EEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF62C47819C5110A00C65EEA /* PBXTargetDependency */,
+			);
+			name = WaltTests;
+			productName = WaltTests;
+			productReference = EF62C47219C5110A00C65EEA /* WaltTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF62C44619C5110A00C65EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Walt;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Walt Inc.";
+				TargetAttributes = {
+					EF62C47119C5110A00C65EEA = {
+						TestTargetID = EF62C44D19C5110A00C65EEA;
+					};
+				};
+			};
+			buildConfigurationList = EF62C44919C5110A00C65EEA /* Build configuration list for PBXProject "Walt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF62C44519C5110A00C65EEA;
+			productRefGroup = EF62C44F19C5110A00C65EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF62C44D19C5110A00C65EEA /* Walt */,
+				EF62C47119C5110A00C65EEA /* WaltTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF62C44C19C5110A00C65EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C46D19C5110A00C65EEA /* Images.xcassets in Resources */,
+				EF62C45C19C5110A00C65EEA /* InfoPlist.strings in Resources */,
+				EF62C46519C5110A00C65EEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62C47019C5110A00C65EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C47E19C5110A00C65EEA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF62C44A19C5110A00C65EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C46219C5110A00C65EEA /* WaltAppDelegate.m in Sources */,
+				EF62C46819C5110A00C65EEA /* WaltMasterViewController.m in Sources */,
+				EF62C45E19C5110A00C65EEA /* main.m in Sources */,
+				EF62C46B19C5110A00C65EEA /* WaltDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF62C46E19C5110A00C65EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF62C48019C5110A00C65EEA /* WaltTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF62C47819C5110A00C65EEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF62C44D19C5110A00C65EEA /* Walt */;
+			targetProxy = EF62C47719C5110A00C65EEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF62C45A19C5110A00C65EEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF62C45B19C5110A00C65EEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF62C46319C5110A00C65EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF62C46419C5110A00C65EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF62C47C19C5110A00C65EEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF62C47D19C5110A00C65EEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF62C48119C5110A00C65EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF62C48219C5110A00C65EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF62C48419C5110A00C65EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walt/Walt-Prefix.pch";
+				INFOPLIST_FILE = "Walt/Walt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF62C48519C5110A00C65EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walt/Walt-Prefix.pch";
+				INFOPLIST_FILE = "Walt/Walt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF62C48719C5110A00C65EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Walt.app/Walt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walt/Walt-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WaltTests/WaltTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF62C48819C5110A00C65EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Walt.app/Walt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walt/Walt-Prefix.pch";
+				INFOPLIST_FILE = "WaltTests/WaltTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF62C44919C5110A00C65EEA /* Build configuration list for PBXProject "Walt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF62C48119C5110A00C65EEA /* Debug */,
+				EF62C48219C5110A00C65EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF62C48319C5110A00C65EEA /* Build configuration list for PBXNativeTarget "Walt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF62C48419C5110A00C65EEA /* Debug */,
+				EF62C48519C5110A00C65EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF62C48619C5110A00C65EEA /* Build configuration list for PBXNativeTarget "WaltTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF62C48719C5110A00C65EEA /* Debug */,
+				EF62C48819C5110A00C65EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF62C44619C5110A00C65EEA /* Project object */;
+}
