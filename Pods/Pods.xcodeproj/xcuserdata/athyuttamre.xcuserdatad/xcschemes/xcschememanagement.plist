@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Walt-EstimoteSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Walt-PaymentKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Walt-Shimmer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Walt-Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Walt.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5193CB5BFCF841C993897740</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74006D76E220475B8CBBA4F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B7DFFC8FAA6F400FB7043769</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD9C26019B904AD6BDB61EED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE070A54FB4240D1BA0B8FB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

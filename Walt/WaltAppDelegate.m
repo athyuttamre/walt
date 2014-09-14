@@ -7,13 +7,98 @@
 //
 
 #import "WaltAppDelegate.h"
+#import "Stripe.h"
+
+NSString * const StripePublishableKey = @"pk_test_CJzbsigGnwMWH2E2fwP1rhV7";
 
 @implementation WaltAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+    }
+    
+    [Stripe setDefaultPublishableKey:StripePublishableKey];
+    
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    self.beaconManager.delegate = self;
+    self.beaconManager.avoidUnknownStateBeacons = YES;
+    
+    data = [AppData sharedData];
+    data.leaveNumber = 0;
+    
+    // create sample region with major value defined
+    ESTBeaconRegion* region = [[ESTBeaconRegion alloc] initWithProximityUUID:ESTIMOTE_PROXIMITY_UUID major:64331 minor:10945 identifier:@"EstimoteSampleRegion"];
+    
+    // start looking for estimote beacons in region
+    // when beacon ranged beaconManager:didEnterRegion:
+    // and beaconManager:didExitRegion: invoked
+    [self.beaconManager startMonitoringForRegion:region];
+    
+    [self.beaconManager requestStateForRegion:region];
+    
+    /////////////////////////////////////////////////////////////
+    // setup view
+    
+    // background
+    
+    //    self.productImage = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //    [self setProductImage];
+    //    [self.view addSubview:self.productImage];
+    
+    [self.beaconManager startMonitoringForRegion:region];
+    [self.beaconManager requestStateForRegion:region];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    // the userInfo dictionary usually contains the same information as the notificationPayload dictionary above
+    
+    UINavigationController *rootViewController = (UINavigationController *) self.window.rootViewController;
+    [rootViewController pushViewController:rootViewController animated:YES];
+}
+
+-(void)beaconManager:(ESTBeaconManager *)manager
+      didEnterRegion:(ESTBeaconRegion *)region
+{
+    // iPhone/iPad entered beacon zone
+    //    [self setProductImage];
+    
+    // present local notification
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertBody = @"Welcome to Kabob and Curry! Here's our menu.";
+    notification.soundName = UILocalNotificationDefaultSoundName;
+    
+    //    [[NSSound soundNamed:@"Frog"] play];
+    NSLog((@"entered"));
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    
+}
+
+-(void)beaconManager:(ESTBeaconManager *)manager
+       didExitRegion:(ESTBeaconRegion *)region
+{
+    // iPhone/iPad left beacon zone
+    
+    // present local notification
+    if (data.leaveNumber == 1) {
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.alertBody = @"Thank you for dining at Kabob and Curry! We hope to see you again soon.";
+        notification.soundName = UILocalNotificationDefaultSoundName;
+        NSLog((@"left"));
+        
+        [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    }
+    else {
+        data.leaveNumber = 1;
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

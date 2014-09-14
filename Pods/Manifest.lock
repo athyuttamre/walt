@@ -1,0 +1,19 @@
+PODS:
+  - EstimoteSDK (2.1.0)
+  - PaymentKit (1.1.1)
+  - Shimmer (1.0.1)
+  - Stripe (1.2)
+
+DEPENDENCIES:
+  - EstimoteSDK
+  - PaymentKit
+  - Shimmer
+  - Stripe
+
+SPEC CHECKSUMS:
+  EstimoteSDK: e20b38d6f5692ae14fc2347a86dd4d64adc6a71c
+  PaymentKit: f77b4d5cee45947949429c3d587e8eb160a3c9e2
+  Shimmer: 35aa2a57b8fbc17f9e16706021665966fd93dbd1
+  Stripe: 332d4942590c9b57a52d2b62a140cc2088907db8
+
+COCOAPODS: 0.33.1

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppData.h"
+#import <ESTBeaconManager.h>
 
-@interface WaltAppDelegate : UIResponder <UIApplicationDelegate>
+@interface WaltAppDelegate : UIResponder <UIApplicationDelegate, ESTBeaconManagerDelegate> {
+    AppData* data;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) ESTBeaconManager* beaconManager;
 
 @end
